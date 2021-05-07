@@ -7,7 +7,7 @@ Wektor3D Prostopadloscian::operator [](int Indeks)const
 {
     if(Indeks >= 8)
         {
-        throw std::runtime_error("Blad: zly indeks");
+        throw std::runtime_error("Blad: Zly indeks");
         }
     
     return Wierzcholek[Indeks];
@@ -18,7 +18,7 @@ Wektor3D& Prostopadloscian::operator [](int Indeks)
 {
     if(Indeks >= 8)
         {
-        throw std::runtime_error("Blad: zly indeks");
+        throw std::runtime_error("Blad: Zly indeks");
         }
     
     return Wierzcholek[Indeks];
@@ -55,22 +55,22 @@ for(int i=0; i<8; i++)
 return true;
 }
 
-Prostopadloscian& Prostopadloscian::Obrot(Macierz3x3 Macierz)
+Prostopadloscian& Prostopadloscian::Obrot(double Kat, char Os)
 {
     for(int i=0; i<8; i++)
     {
-    (*this)[i] = Macierz * (*this)[i];  //Wymnożenie każdego wierzcholka przez macierz obrotu
+    (*this)[i] = MacierzObrotu(Kat, Os) * (*this)[i];  //Wymnożenie każdego wierzcholka przez macierz obrotu
     }
     return *this;
 }
 
 Prostopadloscian& Prostopadloscian::Translacja(Wektor3D Wektor)
 {
-for(int i=0; i<8; i++)
+    for(int i=0; i<8; i++)
     {
-    (*this)[i]=(*this)[i]+Wektor;  //Przesuniecie kazdego wierzcholka o wektor
+    (*this)[i] += Wektor;
     }
-return *this;
+    return (*this);
 }
 
 

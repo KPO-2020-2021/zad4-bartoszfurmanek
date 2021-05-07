@@ -165,7 +165,7 @@ int main()
                     {
                     for(j=0; j<30; j++)               //Petla do wykonywania animacji ruchu (50FPS)
                         {
-                        Pr.Obrot(MacierzObrotu((Sc.PoprzedniKat(k))/30, Sc.PoprzedniaOs(k)));             //Obrot prostopadloscianu
+                        Pr.Obrot((Sc.PoprzedniKat(k))/30, Sc.PoprzedniaOs(k));             //Obrot prostopadloscianu
                         usleep(33333);
                         if (!ZapisWspolrzednychDoPliku("Prostopadloscian.dat",Pr))
                             {
@@ -210,7 +210,7 @@ int main()
                     {
                     for(j=0; j<30; j++)               //Petla do wykonywania animacji ruchu (30FPS)
                         {
-                        Pr.Obrot(MacierzObrotu((Sc.PoprzedniKat(k))/30, Sc.PoprzedniaOs(k)));             //Obrot prostopadloscianu
+                        Pr.Obrot((Sc.PoprzedniKat(k))/30, Sc.PoprzedniaOs(k));             //Obrot prostopadloscianu
                         usleep(33333);
                         if (!ZapisWspolrzednychDoPliku("Prostopadloscian.dat",Pr))
                             {

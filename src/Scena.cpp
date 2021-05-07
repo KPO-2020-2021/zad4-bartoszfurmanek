@@ -53,7 +53,7 @@ void Scena::WyczyscObroty()
 
 void Scena::WykonajObrot(int Indeks)
 {
-    (*this).WzorzecPr().Obrot(MacierzObrotu((*this).PoprzedniKat(Indeks), (*this).PoprzedniaOs(Indeks)));
+    (*this).WzorzecPr().Obrot((*this).PoprzedniKat(Indeks), (*this).PoprzedniaOs(Indeks));
 }
 
 void Scena::WykonajPrzesuniecie()

@@ -28,7 +28,7 @@ class Macierz{
  
   Macierz();
 
-  Macierz(const std::initializer_list<double[Wymiar]> &ListaElem);
+  Macierz(const std::initializer_list<double> &ListaElem);
 
   bool operator== (Macierz M)const;
  
@@ -106,19 +106,25 @@ for(int i=0; i<Wymiar; i++)
 /*!
  * \brief Konstruktor parametryczny dla macierzy.
  */
-/*template <int Wymiar>
-Macierz<Wymiar>::Macierz(const std::initializer_list<double[Wymiar]> &ListaElem):Macierz<Wymiar>()
+template <int Wymiar>
+Macierz<Wymiar>::Macierz(const std::initializer_list<double> &ListaElem):Macierz<Wymiar>()
 {
-  if(ListaElem.size() > Wymiar)
+  if(ListaElem.size() > Wymiar*Wymiar)
     {
       throw std::runtime_error("Blad: Nieodpowiednia liczba parametrow");
     }
-  int Indeks = -1;
+  int I = 0,K = -1;
+  
   for(double Elem_i : ListaElem)
     {
-      Elem[++Indeks] = Elem_i;
+      Elem[I][++K] = Elem_i;
+      if(K==(Wymiar-1))
+        {
+        ++I;
+        K=-1;
+        }
     }
-}*/
+}
 
 
 /*!

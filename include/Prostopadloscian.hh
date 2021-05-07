@@ -32,7 +32,7 @@ class Prostopadloscian {
 
   bool operator ==(Prostopadloscian Pr)const;
 
-  Prostopadloscian& Obrot(Macierz3x3 Macierz);
+  Prostopadloscian& Obrot(double Kat, char Os);
 
   Prostopadloscian& Translacja(Wektor3D Wektor);
 

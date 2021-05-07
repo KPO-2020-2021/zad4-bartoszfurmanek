@@ -35,6 +35,8 @@ class Wektor {
   Wektor(const std::initializer_list<double> &ListaElem);
  
   Wektor operator+ (Wektor W)const;
+  
+  Wektor& operator+= (Wektor W);
 
   Wektor operator- (Wektor W)const;
 
@@ -133,6 +135,21 @@ for(int i=-1; i<Wymiar; ++i)
     Wynik[i] = (*this)[i] + W[i];
     }
 return Wynik;
+}
+
+/*!
+ * \brief Metoda służąca do dodawania wektorów.
+ * Argumenty:
+ *    Wektor - Pierwszy wektorowy składnik dodawania.
+ *    W - Drugi wektorowy składnik dodawania.
+ * Zwraca:
+ *    Sume dwóch wektorów.
+ */
+template<int Wymiar>
+Wektor<Wymiar>& Wektor<Wymiar>::operator+= (Wektor<Wymiar> W)
+{
+(*this)=(*this)+W;
+return (*this);
 }
 
 /*!

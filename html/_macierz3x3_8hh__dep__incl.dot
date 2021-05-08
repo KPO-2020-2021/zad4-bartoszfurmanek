@@ -1,0 +1,19 @@
+digraph "prj/include/Macierz3x3.hh"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="prj/include/Macierz3x3.hh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Definicja klasy Macierz3x3."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="prj/include/Prostopadloscian.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_prostopadloscian_8hh.html",tooltip="Definicja klasy Prostopadloscian."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="prj/include/Scena.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_scena_8hh.html",tooltip="Definicja klasy Scena."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="prj/src/Scena.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_scena_8cpp.html",tooltip="Definicja metod klasy Scena."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="prj/src/Prostopadloscian.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_prostopadloscian_8cpp.html",tooltip="Definicja metod klasy Prostopadloscian."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="prj/src/Macierz3x3.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_macierz3x3_8cpp.html",tooltip="Definicja metod klasy Macierz3x3."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

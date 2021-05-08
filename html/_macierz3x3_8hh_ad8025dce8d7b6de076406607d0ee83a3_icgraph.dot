@@ -1,0 +1,10 @@
+digraph "MacierzObrotu"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="MacierzObrotu",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Metoda sluzaca do generowania macierzy obrotu wokol wybranej osi o zadany kat."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Prostopadloscian::Obrot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_prostopadloscian.html#a6f92f3d224037c80f4d4fedcf25e2187",tooltip="Metoda sluzaca do opracania prostopadloscianu o zadany kat wokol wybranej osi."];
+}

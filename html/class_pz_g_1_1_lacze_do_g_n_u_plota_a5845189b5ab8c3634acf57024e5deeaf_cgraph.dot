@@ -1,0 +1,28 @@
+digraph "PzG::LaczeDoGNUPlota::LaczeDoGNUPlota"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PzG::LaczeDoGNUPlota\l::LaczeDoGNUPlota",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PzG::LaczeDoGNUPlota\l::UstawRotacjeXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a94d8527fd78048ed6cb32ffb29e5f903",tooltip="Ustawia rotację wokół osi OX i OZ."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PzG::LaczeDoGNUPlota\l::UstawRotacjeX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a88324c53a70846fb6bc9d918ce21fd56",tooltip="Ustawia rotację wokół osi OX."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PzG::LaczeDoGNUPlota\l::UstawRotacjeZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a458399aa2a8f4b3f00ccd5b272857ea1",tooltip="Ustawia rotację wokół osi OZ."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PzG::LaczeDoGNUPlota\l::UstawSkaleXZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4308151b54e105d302803146a3238699",tooltip="Zadaje skalę wzdłuż osi OX i OZ."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PzG::LaczeDoGNUPlota\l::UstawSkaleX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a855b8338bfe3e5d294d719f24b11090e",tooltip="Zadaje skalę wzdłuż osi OZ."];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PzG::LaczeDoGNUPlota\l::UstawSkaleZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#ab0486db3166d8db6580a221079af241f",tooltip="Zadaje skalę wzdłuż osi OZ."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PzG::LaczeDoGNUPlota\l::UstawZakresX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef",tooltip="Ustawia zakres osi OX."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PzG::LaczeDoGNUPlota\l::UstawZakresY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c",tooltip="Ustawia zakres osi OY."];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PzG::LaczeDoGNUPlota\l::UstawZakresZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1dbbb2b86fb13b8632e6bad9df2a82e3",tooltip="Ustawia zakres osi OZ."];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PzG::LaczeDoGNUPlota\l::WyswietlajKomunikatyBledow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4531e6d166faf2e2c8bb4a54a9c9e1f8",tooltip="Zezwala lub zabrania wyświetlania komunikatów."];
+}

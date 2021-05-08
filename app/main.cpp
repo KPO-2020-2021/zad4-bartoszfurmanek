@@ -235,24 +235,32 @@ int main()
         
         case 'r':   //Wyswietlenie macierzy rotacji
             {
-            std::cout <<std::endl << "Podaj os obrotu (x, y, z) oraz kat obrotu" <<std::endl;
+            std::cout <<std::endl << "Podaj sekwencje obrotow" <<std::endl;
+            MacierzObr=Macierz3x3{1,0,0,0,1,0,0,0,1};           
             KoniecPetli=0;
             while(!KoniecPetli)
                 {
                 std::cin >> Os;
-                if((Os!='x') && (Os!='y') && (Os!='z'))
+                if((Os!='x') && (Os!='y') && (Os!='z') && (Os!='.'))
                     {
                     std::cin.ignore(100000,'\n');
                     std::cout<< "Nieznana os. Mozliwe opcje to: x, y lub z. Sprobuj ponownie"<< std::endl;
                     }
                 else
                     {
-                    std::cin >> Kat;
-                    std::cin.ignore(100000,'\n');
-                    std::cout<< std::endl << MacierzObrotu(Kat, Os)<< std::endl;
-                    KoniecPetli=1;
+                    if(Os=='.')
+                        {
+                        KoniecPetli=1;
+                        }
+                    else
+                        {
+                        std::cin >> Kat;
+                        std::cin.ignore(100000,'\n');
+                        MacierzObr = MacierzObrotu(Kat,Os) * MacierzObr;
+                        }
                     }
                 }
+            std::cout << MacierzObr <<std::endl;    
             break;
             }
         case 'p':     //Przesuniecie prostopadloscianu

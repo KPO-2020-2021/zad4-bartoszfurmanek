@@ -1,0 +1,21 @@
+digraph "PzG::LaczeDoGNUPlota::Ymax"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PzG::LaczeDoGNUPlota\l::Ymax",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PzG::LaczeDoGNUPlota\l::ZapiszUstawienieZakresu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4579aecf7b4777fdde0cae4e98c275c2",tooltip="Tworzy polecenie ustawiające zakres dla danej współrzędnej."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PzG::LaczeDoGNUPlota\l::BudujPreambule_2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a0ac655ff1934abb69ea668cd92ae77ec",tooltip="Tworzy preambułę poprzedzającą polecenie rysowania w trybie 2D."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PzG::LaczeDoGNUPlota\l::BudujPreambulePoleceniaRysowania",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a0da98f68f533070d5a32adbdb519cf56",tooltip="Tworzy preambułę poprzedzającą polecenie rysowania."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PzG::LaczeDoGNUPlota\l::Rysuj",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PzG::LaczeDoGNUPlota\l::RysujDoPliku",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#addae9ac156ae2fb227f792faff3aa148",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PzG::LaczeDoGNUPlota\l::BudujPreambule_3D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a50a544677e52829cac4dd4a95b821dcb",tooltip="Tworzy preambułę poprzedzającą polecenie rysowania w trybie 3D."];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
